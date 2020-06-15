@@ -1,0 +1,98 @@
+#title{
+    text-align: center;
+    color: red;
+}
+div#newCards {
+    margin-top: 50px;
+    margin-left: 250px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.flip-card {
+    margin-top: 15px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: 250px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: steelblue;
+    transform: rotateY(0deg);
+}
+
+.flip-card-back {
+    background-color: steelblue;
+    color: white;
+    transform: rotateY(-180deg);
+}
+
+#total {
+    width: 800px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: #DDDDDD;
+}
+
+#newKanji {
+    margin-top: 10px;
+    margin-left: 35px;
+    background-color: #EEEEEE;
+}
+
+#newHira {
+    margin-top: 10px;
+    background-color: #EEEEEE;
+}
+
+#newImi {
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #EEEEEE;
+}
+
+.button {
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    margin-left: 90px;
+    font-size: 15px;
+}
+
+#cardText1 {
+    font-size: 145px;
+}
+
+#cardText2 {
+    font-size: 50px;
+}
+
+#cardText3 {
+    font-size: 50px;
+}
