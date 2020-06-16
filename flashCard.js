@@ -67,7 +67,10 @@ for (let i = 0; i < cards.length; i++) {
 // cardsHandle.cardAdd("川", "かわ","sông");
 // cardsHandle.cardAdd("空", "そら","bầu trời");
 // cardsHandle.cardAdd("曇", "くも","mây");
-cardsHandle.cardUpdate();
+if(cardsHandle.cards.length > 0){
+    cardsHandle.cardUpdate();
+}
+
 
 //tạo thẻ mới
 let userEnter = function () {
