@@ -1,10 +1,10 @@
 // trả về nguyên mẫu cho str
 
 String.prototype.isEmpty = function () {
-    return (this.length === 0 || !this.trim()) //trim: cắt, sắp đặt có thứ tự
+    return (this.length === 0 || !this.trim());
 };
 
-// hàm tương tác với thẻ
+// tạo thẻ
 function Card(kanji, hira,imi) {
     this.kanji = kanji;
     this.hira = hira;
@@ -12,7 +12,7 @@ function Card(kanji, hira,imi) {
 
 }
 
-//xử lý thẻ
+//thêm chữ lên thẻ
 let cardsHandle = {
     cards: [],
     cardInd: 0,
@@ -27,7 +27,7 @@ let cardsHandle = {
         this.cards.push(new Card(kanji, hira,imi));
     },
 
-    //hiển thị thẻ
+    //hiển thị thẻ mới
     cardUpdate: function () {
         let card = this.cards[this.cardInd];
         this.cardText1.innerHTML = card.kanji;
@@ -51,12 +51,15 @@ let cardsHandle = {
 
 };
 
-
+//gắn giá trị cho thẻ
 cardsHandle.cardAdd("水", "みず","nước");
 cardsHandle.cardAdd("山", "やま","núi");
 cardsHandle.cardAdd("川", "かわ","sông");
+cardsHandle.cardAdd("空", "そら","bầu trời");
+cardsHandle.cardAdd("曇", "くも","mây");
 cardsHandle.cardUpdate();
 
+//tạo thẻ mới
 let userEnter = function () {
     let enterKanji = document.getElementById("newKanji");
     let enterHira = document.getElementById("newHira");
@@ -72,10 +75,10 @@ let userEnter = function () {
     cardsHandle.cardUpdate();
 
 }
-function saveData() {
-    localStorage.setItem(card, JSON.stringify());
-}
-function loadData() {
-return localStorage.hasOwnProperty(card) ? JSON.parse(localStorage.getItem(card)) : [];
-}
+// function saveData() {
+//     localStorage.setItem(card, JSON.stringify());
+// }
+// function loadData() {
+// return localStorage.hasOwnProperty(card) ? JSON.parse(localStorage.getItem(card)) : [];
+// }
 
