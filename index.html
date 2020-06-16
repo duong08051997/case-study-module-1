@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>flash card</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="flashCard.css">
+    <script src="main.js"></script>
 </head>
 <body>
 
@@ -16,7 +20,8 @@
     ひらがな :<input type="text" id="newHira" name="backside"><br/>
 
     意味 :<input type="text" id="newImi" name="backside"><br/>
-    <input class="button " value="add" type="button" onclick="userEnter();">
+    <input class="button1 btn btn-success" value="add" type="button" onclick="userEnter();">
+    <input value="delete" class="button2 btn btn-danger" type="button" onclick="del();">
 </div>
     <div class="flip-card" >
         <div class="flip-card-inner">
@@ -30,7 +35,7 @@
         </div>
     </div>
 
-<p align="center">
+<p id="next" align="center">
    <button id="prevCard"  onclick="cardsHandle.cardMove(-1)" >prev</button>
     <span id="positionIndex">0/0</span>
     <button id="newCard" onclick="cardsHandle.cardMove(1)" >next</button>

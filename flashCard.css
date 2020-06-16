@@ -1,3 +1,7 @@
+#next{
+    margin-top: 10px;
+}
+
 #title{
     text-align: center;
     color: red;
@@ -77,12 +81,14 @@ div#newCards {
     background-color: #EEEEEE;
 }
 
-.button {
-    margin-top: 10px;
-    width: 50px;
-    height: 30px;
+.button1 {
+    margin-top: 5px;
     margin-left: 90px;
-    font-size: 15px;
+    /*font-size: 15px;*/
+}
+.button2{
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 #cardText1 {
