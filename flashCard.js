@@ -62,11 +62,11 @@ let cards = loadData();
 for (let i = 0; i < cards.length; i++) {
     cardsHandle.cardAdd(cards[i].kanji, cards[i].hira, cards[i].imi);
 }
-cardsHandle.cardAdd("水", "みず","nước");
-cardsHandle.cardAdd("山", "やま","núi");
-cardsHandle.cardAdd("川", "かわ","sông");
-cardsHandle.cardAdd("空", "そら","bầu trời");
-cardsHandle.cardAdd("曇", "くも","mây");
+// cardsHandle.cardAdd("水", "みず","nước");
+// cardsHandle.cardAdd("山", "やま","núi");
+// cardsHandle.cardAdd("川", "かわ","sông");
+// cardsHandle.cardAdd("空", "そら","bầu trời");
+// cardsHandle.cardAdd("曇", "くも","mây");
 cardsHandle.cardUpdate();
 
 //tạo thẻ mới
